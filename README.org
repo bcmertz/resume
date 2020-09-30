@@ -1,3 +1,7 @@
 * Resume
 + based off of designs by @iechevarria
 + Written in LaTeX
+
+If you're nontechnical and poking around, check out resume.pdf in the source code files
+
+Feel free to reuse this as a template!
