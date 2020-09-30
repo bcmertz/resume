@@ -1,6 +1,8 @@
 \documentclass[12pt]{article}
-\renewcommand{\familydefault}{\sfdefault}
 
+% sans serif
+\renewcommand{\familydefault}{\sfdefault}
+% set margins
 \usepackage[margin=0.5in]{geometry}
 \usepackage{multirow}
 
@@ -8,6 +10,7 @@
 
 \title{Bennett Mertz}
 \date{}
+% no page numbers
 \pagenumbering{gobble}
 
 %% Header %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -27,14 +30,14 @@
 \hrule
 \vspace{0.25cm}
 
-\noindent\begin{minipage}[t][1.75cm][t]{0.20\textwidth}
+\noindent\begin{minipage}[t][1.5cm][t]{0.20\textwidth}
 \begin{flushleft}
   Tools and Software:
   \end{flushleft}
 \end{minipage}
-\begin{minipage}[t][1.75cm][t]{0.80\textwidth}
+\begin{minipage}[t][1.5cm][t]{0.80\textwidth}
   \begin{flushright}
-Javascript(ES7), Python 3, Golang, React, AWS S3/EC2, Tensorflow, OpenCV, Linux, MongoDB, Vagrant, Redis, Postgres, Webpack, Babel, Immutable.js, Node.js, Flask, HTML5 and of course {\LaTeX}  \\
+JavaScript(ES7), Golang, TypeScript, Python3, Bash, Java/Android, AWS/GCP, Elisp, React/Redux, Linux, Postgres, Redis, Webpack, Babel, HTML5, and of course {\LaTeX}  \\
   \end{flushright}
 \end{minipage}
 
@@ -45,7 +48,7 @@ Javascript(ES7), Python 3, Golang, React, AWS S3/EC2, Tensorflow, OpenCV, Linux,
 \end{minipage}
 \begin{minipage}{0.80\textwidth}
   \begin{flushright}
-    React, backend development, computer vision, data processing
+    Fullstack dev, a11y, build systems / tooling
   \end{flushright}
 \end{minipage}
 
@@ -56,27 +59,34 @@ Javascript(ES7), Python 3, Golang, React, AWS S3/EC2, Tensorflow, OpenCV, Linux,
 \hrule
 \vspace{0.25cm}
 
-\noindent Fellow, Recurse Center\hfill July 2018 - present
+\noindent Software Engineer, \textit{lantern.io} \hfill Oct 2018 - present
 \vspace{-0.2cm}
 \begin{itemize}
   \itemsep-0.4em
-	\item Implemented a barebones Linux dualboot from binaries on my personal machine
-	\item Built two JavaScript transpilers using a bottom-up LR parser and PEG.js
-	\item Wrote a shell script to compile Opencv-Python with FFMPEG support from binaries in Centos 7
+\item Created a staging test environment to profile proxies under simulated high load from many simultanous client connections, and debugged a number of critical performance bugs that were causing proxy crashes
+\item Wrote build scripts for cross platform linux packaging of the core proxy application
+\item Audited and overhauled UI accessibility, migrated codebase to TypeScript, implemented frontend of a p2p file sharing product, modernized legacy react code
+\item Implemented the backend and frontend of a user facing notification system and an issue reporting endpoint
+\end{itemize}
+
+
+\noindent Coding Retreat, \textit{Recurse Center} \hfill July 2018 - Sept 2018
+\vspace{-0.2cm}
+\begin{itemize}
+  \itemsep-0.4em
+	\item Wrote scripts to compile Opencv-Python with FFMPEG support from binaries in Centos 7
         \item Implemented steganographic encoding and decoding in Go
 \end{itemize}
 
-\noindent Software Development and Project Mangement Intern, Enventure Enterprises\hfill May 2017 - Jan 2018
+\noindent Software Development and Project Mangement Intern, \textit{Enventure Enterprises} \hfill May 2017 - Jan 2018
 \vspace{-0.2cm}
 \begin{itemize}
   \itemsep-0.4em
-	\item ENgineered and deployed a production ready progressive web app used by company management
-	\item Product managed a team of six people in the design and production of an open source data collection app
-	\item Implemented optimizations to make the site available offline and reduced assets loaded each revisit to 455 bytes
-        \item Built with React, Immutable.js, Postgres, Recharts, MaterialUI, Airbnb linting standards, service workers
+	\item Engineered and deployed a production ready progressive web app used by company management
+	\item Product managed a team of six people in the design and production of an open source data collection app for environmentally sustainable African companies
 \end{itemize}
 
-\noindent Research Assistant, Nanomaterials & Imaging Lab, College of William & Mary \hfill Jan 2015 - Jan 2018
+\noindent Research Assistant, \textit{Nanomaterials \& Imaging Lab, College of William \& Mary} \hfill Jan 2015 - Jan 2018
 \vspace{-0.2cm}
 \begin{itemize}
   \itemsep-0.4em
@@ -90,33 +100,45 @@ Javascript(ES7), Python 3, Golang, React, AWS S3/EC2, Tensorflow, OpenCV, Linux,
 \hrule
 \vspace{0.25cm}
 
-\noindent Search Within Video, www.searchwithinvideo.com\hfill March 2017 - May 2017
+\noindent Ray Tracer, \textit{github.com/bcmertz/ray-tracer} \hfill July 2020 - August 2020
+\vspace{-0.2cm}
+\begin{itemize}
+  \itemsep-0.4em
+        \item Implemented Go based ray tracer that is capable of rendering shapes, colors, shadows, and lights
+\end{itemize}
+
+\noindent Concurrent Downloader, \textit{github.com/bcmertz/sanic} \hfill Oct 2018 - Jan 2019
+\vspace{-0.2cm}
+\begin{itemize}
+  \itemsep-0.4em
+        \item Leveraged Go concurrency to create an open source remote file / torrent downloader, with optional built in rate limiting to aid in downloading large video files from the internet
+\end{itemize}
+
+
+\noindent Search Within Video, \textit{www.searchwithinvideo.com} \hfill March 2017 - May 2017
 \vspace{-0.2cm}
 \begin{itemize}
   \itemsep-0.4em
         \item Built a platform allowing users to upload videos and process them with machine learning and computer vision to make the videos searchable for objects, text, and scenery
 	\item Engineered a microservice architecture to preprocess video data in order to optimize for scalability and speed
-	\item Leveraged Google Analytics and AdWords to grow website traffic 431\% in 2 weeks
-        \item Implemented a data pipeline using OpenCV, Clarifai, AWS S3/EC2, Heroku, Node.js, and Flask
 \end{itemize}
 
 
-\noindent ExploView, itunes.apple.com/app/id1228404743\hfill Feb 2017
+\noindent ExploView, \textit{itunes.apple.com/app/id1228404743} \hfill Feb 2017
 \vspace{-0.2cm}
 \begin{itemize}
   \itemsep-0.4em
         \item Built a native cross-platform mobile app that uses machine learning on photos taken in-app, providing augmented user experience with suggested related services based off of real time image recognition
-	\item Built with TensorFlow, AWS S3/EC2, React Native, MongoDB
 \end{itemize}
 
 
-\noindent Espresso, https://github.com/bcmertz/Espresso \hfill Jan 2017
-\vspace{-0.2cm}
-\begin{itemize}
-  \itemsep-0.4em
-        \item Created a super lightweight clone of the popular package Express
-	\item Built with HTTP and included middleware and Handlebars.js support to provide easy routing functionality
-\end{itemize}
+%% \noindent Espresso, \textit{github.com/bcmertz/Espresso} \hfill Jan 2017
+%% \vspace{-0.2cm}
+%% \begin{itemize}
+%%   \itemsep-0.4em
+%%         \item Created a super lightweight clone of the popular package Express
+%% 	\item Built with HTTP and included middleware and Handlebars.js support to provide easy routing functionality
+%% \end{itemize}
 
 %% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-0.50cm}
@@ -125,7 +147,7 @@ Javascript(ES7), Python 3, Golang, React, AWS S3/EC2, Tensorflow, OpenCV, Linux,
 \hrule
 \vspace{0.25cm}
 
-\noindent College of William and Mary, Williamsburg, VA \hfill May 2018
+\noindent College of William and Mary, \textit{Williamsburg, VA} \hfill May 2018
 \vspace{-0.2cm}
 \begin{itemize}
   \itemsep-0.4em
