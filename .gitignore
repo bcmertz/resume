@@ -3,5 +3,5 @@
 !resume.pdf
 !README.org
 !.gitignore
-!index.html
-!index.org
+!portfolio/
+!portfolio/*
