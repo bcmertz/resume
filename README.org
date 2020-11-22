@@ -1,6 +1,7 @@
 * Resume
 + based off of designs by @iechevarria
 + Written in LaTeX
+* Portfolio
 
 If you're nontechnical and poking around, check out resume.pdf in the source code files
 
